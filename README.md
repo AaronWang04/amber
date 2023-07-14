@@ -1,1 +1,2 @@
 # amber
+A WIP machine learning library that implements many of the essential machine learning algorithms in C++. Built with only native c++ and no other dependicies. It will contain a list of popular data structures and algorithms used for creating machine learning models.
