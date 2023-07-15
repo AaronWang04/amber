@@ -19,11 +19,20 @@ Shape: tensor shape
 Require_gradient: Used in running gradient descent, tell autograd to begin recording operations if true
 Device type: which device the tensor is on, implement in future
 
+Implementing tensors from scratch (with good performance and feature set) is a pretty difficult task, most source I have looked at used libraryies such as numpy to assist with the implementation rather than doing it from scratch. Comparing eigen and xtensor, it seems like eigen is the better choice as it is better supported. xTensor has the advantage of having similar syntax to numpy, but that is as not important as being able to run cuda for example. The tiny tensor class written has been moved to the notes folder.
+
 #### Additional C++ information
+The project is written in C++17. 
+
 Templates: Instead of rewriting functions multiple times for different types, you can create a template that passes the type of whatever you passed in. For example \<typename T> indicates that whenever you write T in place of a type declaration in your code, it replaces it with the typename of the object.
 
 Structure: Collection of variables of different data types under the same name. Used when you want a class of plain data structures with no need for addition methods/protected data.
 
 #### Resources used
+http://blog.ezyang.com/2019/05/pytorch-internals/
 https://getcode.substack.com/p/fun-and-hackable-tensors-in-rust
 https://github.com/tinygrad/tinygrad
+- https://github.com/tinygrad/tinygrad/commits/master?after=9c135c94506e30e635cf50d1f11c4782ce5cc3d0+1819&branch=master&qualified_name=refs%2Fheads%2Fmaster
+- https://github.com/tinygrad/tinygrad/blob/26899869a2881507bd68452715f1bf683af22c81/tinygrad/tensor.py
+
+https://xtensor.readthedocs.io/en/latest/developer/xtensor_internals.html
