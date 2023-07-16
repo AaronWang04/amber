@@ -8,4 +8,3 @@ add_library(amber amber.cpp)
 
 find_package(xtensor CONFIG REQUIRED)
 target_link_libraries(amber xtensor)
-

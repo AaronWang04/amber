@@ -1,3 +1,5 @@
 C:/Users/aaron/Desktop/repos/amber/build/CMakeFiles/amber.dir
+C:/Users/aaron/Desktop/repos/amber/build/CMakeFiles/package.dir
+C:/Users/aaron/Desktop/repos/amber/build/CMakeFiles/package_source.dir
 C:/Users/aaron/Desktop/repos/amber/build/CMakeFiles/edit_cache.dir
 C:/Users/aaron/Desktop/repos/amber/build/CMakeFiles/rebuild_cache.dir
