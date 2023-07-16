@@ -1,0 +1,8 @@
+# visual studio
+/.vs
+
+/x64
+
+amber.vcxproj
+amber.vcxproj.filters
+amber.vcxproj.user

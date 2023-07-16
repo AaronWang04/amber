@@ -1,8 +1,0 @@
-[
-{
-  "directory": "C:/Users/aaron/Desktop/repos/amber/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/amber.dir/includes_CXX.rsp -g -o CMakeFiles\\amber.dir\\amber.cpp.obj -c C:\\Users\\aaron\\Desktop\\repos\\amber\\amber.cpp",
-  "file": "C:/Users/aaron/Desktop/repos/amber/amber.cpp",
-  "output": "CMakeFiles/amber.dir/amber.cpp.obj"
-}
-]
