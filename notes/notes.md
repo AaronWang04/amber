@@ -1,7 +1,7 @@
 ### Compilation of notes and resources
 
 #### Folder structure
-A CPP project should have two folders, include and src. A header file should go into include when it is necessary to use the library, whereas src should contain optional tools. For example in pytorch, import torch contains all that is absolute necessary, and torch.utils contains a variety of useful, but not situational tools.
+A CPP project should have two folders, include and src. Include folder has all the header files needed to do anything, think of it as a place to store your folders. It is best practice to not put something in include if it is not necessary, as it increases build time. Source folder
 
 #### Essential components of a ML library
 1. Data structure: Tensors are the most ideal for machine learning as it can represent a variety of other data, such as videos, texts, and audio. The tensor class should have sufficient methods to perform all the necessary mathematical operations.
@@ -27,6 +27,7 @@ The project is written in C++17.
 Templates: Instead of rewriting functions multiple times for different types, you can create a template that passes the type of whatever you passed in. For example \<typename T> indicates that whenever you write T in place of a type declaration in your code, it replaces it with the typename of the object.
 
 Structure: Collection of variables of different data types under the same name. Used when you want a class of plain data structures with no need for addition methods/protected data.
+
 
 #### Resources used
 http://blog.ezyang.com/2019/05/pytorch-internals/
