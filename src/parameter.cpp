@@ -6,7 +6,6 @@
 namespace amber{
 
 template <class T>
-
 parameter<T>::parameter(){
     tensor = xt::xarray<double> = {1.};
     grad = xt::xarray<double> = {1.};
