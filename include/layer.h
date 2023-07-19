@@ -1,7 +1,11 @@
 #include <iostream>
 #include <vector>
-#include "xtensor/xarray.hpp"
+
+
 #include "include/parameter.h"
+#include "include/sgd_optimizer.h"
+
+#include "xtensor/xarray.hpp"
 
 namespace amber{
 
@@ -12,8 +16,8 @@ public:
 
     xt::xarray<T> forward(xt::xarray<T> tensor);
     void build_param(xt::xarray<T> tensor); // create a parameter from a tensor
-    // update(optimizer);
-
+    void update_param(amber::sgd_optimizer<T> optimizer);
+    
 };
 
 }
