@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "array": "cpp",
+        "complex": "cpp",
+        "iosfwd": "cpp",
+        "iterator": "cpp",
+        "span": "cpp",
+        "vector": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp",
+        "ranges": "cpp"
+    }
+}
