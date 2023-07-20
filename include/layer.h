@@ -3,20 +3,20 @@
 
 
 #include "include/parameter.h"
-#include "include/sgd_optimizer.h"
+#include "include/SGD_Optimizer.h"
 
 #include "xtensor/xarray.hpp"
 
 namespace amber{
 
 template <class T>
-class layer{
+class Layer{
 public:
-    std::vector<amber::parameter<T>> parameters;
+    std::vector<amber::Parameter<T>> parameters;
 
     xt::xarray<T> forward(xt::xarray<T> tensor);
     void build_param(xt::xarray<T> tensor); // create a parameter from a tensor
-    void update_param(amber::sgd_optimizer<T> optimizer);
+    void update_param(amber::SGD_Optimizer<T> optimizer);
     
 };
 

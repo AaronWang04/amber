@@ -4,14 +4,14 @@
 namespace amber{
 
 template<class T>
-class parameter{
+class Parameter{
 public:
     // The gradient of a tensor has the same shape
     xt::xarray<T> tensor;
     xt::xarray<T> grad;
 
-    parameter();
-    parameter(xt::xarray<T> in_tensor);
+    Parameter();
+    Parameter(xt::xarray<T> in_tensor);
 
 };
 }

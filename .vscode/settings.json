@@ -8,6 +8,7 @@
         "vector": "cpp",
         "xstring": "cpp",
         "xutility": "cpp",
-        "ranges": "cpp"
+        "ranges": "cpp",
+        "iostream": "cpp"
     }
 }

@@ -4,15 +4,15 @@
 namespace amber{
 
 template <class T>
-class sgd_optimizer{
+class SGD_Optimizer{
 public:
 
     int lr;
 
-    sgd_optimizer();
-    sgd_optimizer(int lr);
+    SGD_Optimizer();
+    SGD_Optimizer(int lr);
 
-    void update(amber::parameter<T> param);
+    void update(amber::Parameter<T> param);
 
 };
 
