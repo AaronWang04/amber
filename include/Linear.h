@@ -1,7 +1,7 @@
 #include <iostream>
 #include "xtensor/xarray.hpp"
 
-#include"include/Parameter.h"
+#include "include/Parameter.h"
 #include "include/Layer.h"
 
 namespace amber{
@@ -19,6 +19,6 @@ public:
     xt::xarray<T> forward(xt::xarray<T> in_tensor);
     xt::xarray<T> backward(xt::xarray<T> in_tensor_d);
 
-}
+};
 
 }

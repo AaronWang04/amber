@@ -14,13 +14,13 @@ Linear<T>::Linear(size_t in_features, size_t out_features){
 }
 
 template <class T>
-xt::xarray<T> forward(xt::xarray<T> in_tensor){
+xt::xarray<T> Linear<T>::forward(xt::xarray<T> in_tensor){
     forward_tensor = in_tensor;
     return (in_tensor*weights) + bias;
 }
 
 template<class T>
-xt::xarray<T> backward(xt::xarray<T> in_tensor_d){
+xt::xarray<T> Linear<T>::backward(xt::xarray<T> in_tensor_d){
     weights.grad += (xt::transpose(forward_tensor))*in_tensor_d;
     bias.grad += xt::sum(in_tensor_d, {0,1});
     return in_tensor_d * xt::transepose(weights.tensor);

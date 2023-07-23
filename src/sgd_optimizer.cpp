@@ -16,7 +16,7 @@ SGD_Optimizer<T>::SGD_Optimizer(int in_lr){
 }
 
 template <class T>
-void SGD_Optimizer<T>::update(amber::parameter<T> in_param){
+void SGD_Optimizer<T>::update(amber::Parameter<T> in_param){
     in_param.tensor -= lr*in_param.grad;
     param.grad = xt::zeros<T>(param.grad.shape());
 }
