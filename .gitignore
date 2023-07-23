@@ -3,7 +3,7 @@
 
 /x64
 
-*.sln
-amber.vcxproj
-amber.vcxproj.filters
-amber.vcxproj.user
+.sln
+.vcxproj
+.vcxproj.filters
+.vcxproj.user
