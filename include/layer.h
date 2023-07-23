@@ -14,9 +14,9 @@ class Layer{
 public:
     std::vector<amber::Parameter<T>> parameters;
 
-    xt::xarray<T> forward(xt::xarray<T> tensor);
     void build_param(xt::xarray<T> tensor); // create a parameter from a tensor
     void update_param(amber::SGD_Optimizer<T> optimizer);
+    virtual xt::xarray<T> forward(xt::xarray<T> tensor);
     
 };
 
